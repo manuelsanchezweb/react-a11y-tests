@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@vitejs/plugin-react-swc": "^3.10.2",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tabbable": "^6.2.0"
