@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="16" failures="0" errors="0" time="0.105309208">
+    <testsuite name="test/testing-library/slider/Slider.test.jsx" timestamp="2025-07-02T14:22:20.561Z" hostname="ZV-CVFK39WVKK" tests="7" failures="0" errors="0" skipped="2" time="0.0621335">
+        <testcase classname="test/testing-library/slider/Slider.test.jsx" name="Slider &gt; WAI-ARIA Roles, States, and Properties &gt; The element serving as the focusable slider control has role slider." time="0.036662584">
+        </testcase>
+        <testcase classname="test/testing-library/slider/Slider.test.jsx" name="Slider &gt; WAI-ARIA Roles, States, and Properties &gt; The slider element has the aria-valuenow property set to a decimal value representing the current value of the slider." time="0.009367">
+        </testcase>
+        <testcase classname="test/testing-library/slider/Slider.test.jsx" name="Slider &gt; WAI-ARIA Roles, States, and Properties &gt; The slider element has the aria-valuemin property set to a decimal value representing the minimum allowed value of the slider." time="0.00581475">
+        </testcase>
+        <testcase classname="test/testing-library/slider/Slider.test.jsx" name="Slider &gt; WAI-ARIA Roles, States, and Properties &gt; The slider element has the aria-valuemax property set to a decimal value representing the maximum allowed value of the slider." time="0.004674708">
+        </testcase>
+        <testcase classname="test/testing-library/slider/Slider.test.jsx" name="Slider &gt; WAI-ARIA Roles, States, and Properties &gt; If the value of aria-valuenow is not user-friendly, e.g., the day of the week is represented by a number, the aria-valuetext property is set to a string that makes the slider value understandable, e.g., &quot;Monday&quot;." time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="test/testing-library/slider/Slider.test.jsx" name="Slider &gt; WAI-ARIA Roles, States, and Properties &gt; If the slider has a visible label, it is referenced by aria-labelledby on the slider element. Otherwise, the slider element has a label provided by aria-label." time="0.005030542">
+        </testcase>
+        <testcase classname="test/testing-library/slider/Slider.test.jsx" name="Slider &gt; WAI-ARIA Roles, States, and Properties &gt; If the slider is vertically oriented, it has aria-orientation set to vertical. The default value of aria-orientation for a slider is horizontal." time="0">
+            <skipped/>
+        </testcase>
+    </testsuite>
+    <testsuite name="test/testing-library/tablist/TabList.test.jsx" timestamp="2025-07-02T14:22:20.562Z" hostname="ZV-CVFK39WVKK" tests="9" failures="0" errors="0" skipped="2" time="0.043175708">
+        <testcase classname="test/testing-library/tablist/TabList.test.jsx" name="TabList &gt; WAI-ARIA Roles, States, and Properties &gt; The element that serves as the container for the set of tabs has role tablist." time="0.025327834">
+        </testcase>
+        <testcase classname="test/testing-library/tablist/TabList.test.jsx" name="TabList &gt; WAI-ARIA Roles, States, and Properties &gt; Each element that serves as a tab has role tab and is contained within the element with role tablist." time="0.003184125">
+        </testcase>
+        <testcase classname="test/testing-library/tablist/TabList.test.jsx" name="TabList &gt; WAI-ARIA Roles, States, and Properties &gt; Each element that contains the content panel for a tab has role tabpanel." time="0.001722208">
+        </testcase>
+        <testcase classname="test/testing-library/tablist/TabList.test.jsx" name="TabList &gt; WAI-ARIA Roles, States, and Properties &gt; If the tab list has a visible label, the element with role tablist has aria-labelledby set to a value that refers to the labelling element.  Otherwise, the tablist element has a label provided by aria-label" time="0.00311025">
+        </testcase>
+        <testcase classname="test/testing-library/tablist/TabList.test.jsx" name="TabList &gt; WAI-ARIA Roles, States, and Properties &gt; Each element with role tab has the property aria-controls referring to its associated tabpanel element." time="0.003318208">
+        </testcase>
+        <testcase classname="test/testing-library/tablist/TabList.test.jsx" name="TabList &gt; WAI-ARIA Roles, States, and Properties &gt; The active tab element has the state aria-selected set to true and all other tab elements have it set to false." time="0.0022205">
+        </testcase>
+        <testcase classname="test/testing-library/tablist/TabList.test.jsx" name="TabList &gt; WAI-ARIA Roles, States, and Properties &gt; Each element with role tabpanel has the property aria-labelledby referring to its associated tab element." time="0.003646292">
+        </testcase>
+        <testcase classname="test/testing-library/tablist/TabList.test.jsx" name="TabList &gt; WAI-ARIA Roles, States, and Properties &gt; If a tab element has a popup menu, it has the property aria-haspopup set to either menu or true." time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="test/testing-library/tablist/TabList.test.jsx" name="TabList &gt; WAI-ARIA Roles, States, and Properties &gt; If the tablist element is vertically oriented, it has the property aria-orientation set to vertical. The default value of aria-orientation for a tablist element is horizontal." time="0">
+            <skipped/>
+        </testcase>
+    </testsuite>
+</testsuites>
