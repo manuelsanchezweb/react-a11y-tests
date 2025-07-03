@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="11" failures="0" errors="0" time="0.22139175">
+    <testsuite name="test/screenreader/virtual/slider/Slider.test.jsx" timestamp="2025-07-03T07:40:12.847Z" hostname="ZV-CVFK39WVKK" tests="6" failures="0" errors="0" skipped="2" time="0.08614525">
+        <testcase classname="test/screenreader/virtual/slider/Slider.test.jsx" name="Slider &gt; WHEN I use a desktop screenreader (NVDA, JAWS, VoiceOver) &gt; AND I use the tab key to move focus to a range slider &gt; I HEAR Its purpose is clear" time="0.046262625">
+        </testcase>
+        <testcase classname="test/screenreader/virtual/slider/Slider.test.jsx" name="Slider &gt; WHEN I use a desktop screenreader (NVDA, JAWS, VoiceOver) &gt; AND I use the tab key to move focus to a range slider &gt; I HEAR It identifies itself as a range" time="0.015497583">
+        </testcase>
+        <testcase classname="test/screenreader/virtual/slider/Slider.test.jsx" name="Slider &gt; WHEN I use a desktop screenreader (NVDA, JAWS, VoiceOver) &gt; AND I use the tab key to move focus to a range slider &gt; I HEAR Its label is read with the input" time="0.012268166">
+        </testcase>
+        <testcase classname="test/screenreader/virtual/slider/Slider.test.jsx" name="Slider &gt; WHEN I use a desktop screenreader (NVDA, JAWS, VoiceOver) &gt; AND I use the tab key to move focus to a range slider &gt; I HEAR Its current value" time="0.011613625">
+        </testcase>
+        <testcase classname="test/screenreader/virtual/slider/Slider.test.jsx" name="Slider &gt; WHEN I use a desktop screenreader (NVDA, JAWS, VoiceOver) &gt; AND I use the tab key to move focus to a range slider &gt; WHEN I use the left arrow keys I HEAR the value is changed one step" time="0">
+            <skipped/>
+        </testcase>
+        <testcase classname="test/screenreader/virtual/slider/Slider.test.jsx" name="Slider &gt; WHEN I use a desktop screenreader (NVDA, JAWS, VoiceOver) &gt; AND I use the tab key to move focus to a range slider &gt; WHEN I use the right arrow keys I HEAR the value is changed one step" time="0">
+            <skipped/>
+        </testcase>
+    </testsuite>
+    <testsuite name="test/screenreader/virtual/tablist/TabList.test.jsx" timestamp="2025-07-03T07:40:12.848Z" hostname="ZV-CVFK39WVKK" tests="5" failures="0" errors="0" skipped="0" time="0.1352465">
+        <testcase classname="test/screenreader/virtual/tablist/TabList.test.jsx" name="TabList &gt; WHEN I use a desktop screenreader (NVDA, JAWS, VoiceOver) &gt; AND I use the tab key to move focus to a tab &gt; I HEAR Its label and purpose is clear" time="0.047165959">
+        </testcase>
+        <testcase classname="test/screenreader/virtual/tablist/TabList.test.jsx" name="TabList &gt; WHEN I use a desktop screenreader (NVDA, JAWS, VoiceOver) &gt; AND I use the tab key to move focus to a tab &gt; I HEAR It identifies itself as a tab" time="0.015703875">
+        </testcase>
+        <testcase classname="test/screenreader/virtual/tablist/TabList.test.jsx" name="TabList &gt; WHEN I use a desktop screenreader (NVDA, JAWS, VoiceOver) &gt; AND I use the tab key to move focus to a tab &gt; I HEAR It expresses its state (selected/pressed/checked)" time="0.013075209">
+        </testcase>
+        <testcase classname="test/screenreader/virtual/tablist/TabList.test.jsx" name="TabList &gt; WHEN I use a desktop screenreader (NVDA, JAWS, VoiceOver) &gt; AND I use the tab key to move focus to a tab &gt; THEN when I use the tab key &gt; I HEAR focus moves to the activated tab panel" time="0.027792708">
+        </testcase>
+        <testcase classname="test/screenreader/virtual/tablist/TabList.test.jsx" name="TabList &gt; WHEN I use a desktop screenreader (NVDA, JAWS, VoiceOver) &gt; AND I use the tab key to move focus to a tab &gt; IF TAB ACTIVATION IS AUTOMATIC &gt; when I use the left/right arrow keys &gt; I HEAR the tab is activated" time="0.030808666">
+        </testcase>
+    </testsuite>
+</testsuites>
