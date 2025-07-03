@@ -1,5 +1,5 @@
 import React from 'react';
 
 export const Button = () => {
-  return <button></button>;
+  return <button onClick={() => {}}>Label</button>;
 };
