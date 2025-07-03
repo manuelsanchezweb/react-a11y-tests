@@ -10,7 +10,7 @@
     "prettier": "prettier --write .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "build-storybook": "storybook build --output-dir storybook-static",
     "test:storybook": "JEST_JUNIT_OUTPUT_DIR=reports JEST_JUNIT_OUTPUT_NAME=storybook.xml test-storybook --junit",
     "test:testing-library": "vitest --config ./vitest.config.js",
     "test:playwright": "PLAYWRIGHT_JUNIT_OUTPUT_DIR=reports PLAYWRIGHT_JUNIT_OUTPUT_NAME=playwright.xml playwright test -c playwright-ct.config.js --reporter=junit",

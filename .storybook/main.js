@@ -6,5 +6,9 @@ const config = {
     'name': '@storybook/react-vite',
     'options': {},
   },
+  viteFinal: (config) => {
+    config.base = '/storybook/';
+    return config;
+  },
 };
 export default config;
