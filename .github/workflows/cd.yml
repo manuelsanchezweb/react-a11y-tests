@@ -1,4 +1,4 @@
-name: CD - Deploy Storybook
+name: CD - Deploy
 
 on:
   push:
@@ -6,10 +6,8 @@ on:
       - main
 
 jobs:
-  deploy-storybook:
+  deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
     permissions:
       contents: read
       pages: write
@@ -17,17 +15,31 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-        with:
-          persist-credentials: false
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
 
-      - uses: bitovi/github-actions-storybook-to-github-pages@v1.0.3
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Vite app
+        run: npm run build
+
+      - name: Build Storybook
+        run: npm run build-storybook
+
+      - name: Prepare deployment directory
+        run: |
+          mkdir public
+          cp -r dist/* public/
+          mkdir -p public/storybook
+          cp -r storybook-static/* public/storybook/
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          install_command: npm ci
-          build_command: npm run build-storybook
-          path: storybook-static
-          checkout: false
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          commit_message: 'Deploy Vite + Storybook [ci skip]'
