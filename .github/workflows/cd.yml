@@ -22,23 +22,12 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build Vite app
-        run: npm run build
-
       - name: Build Storybook
         run: npm run build-storybook
 
-      - name: Prepare deployment directory
-        run: |
-            rm -rf public
-            mkdir public
-            cp -r dist/* public/
-            mkdir -p public/storybook
-            cp -r storybook-static/* public/storybook/
-
-      - name: Deploy to GitHub Pages
+      - name: Deploy Storybook
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          commit_message: 'Deploy Vite + Storybook [ci skip]'
+          publish_dir: ./storybook-static
+          commit_message: 'Deploy Storybook [ci skip]'
