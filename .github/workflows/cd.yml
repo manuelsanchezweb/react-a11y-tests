@@ -32,10 +32,11 @@ jobs:
 
       - name: Prepare deployment directory
         run: |
-          mkdir public
-          cp -r dist/* public/
-          mkdir -p public/storybook
-          cp -r storybook-static/* public/storybook/
+            rm -rf public
+            mkdir public
+            cp -r dist/* public/
+            mkdir -p public/storybook
+            cp -r storybook-static/* public/storybook/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
